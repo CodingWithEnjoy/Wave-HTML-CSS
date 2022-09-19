@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متن موج دار - برنامه نویسی با لذت | Coding With Enjoy</title>
+    <style>
+        body {
+            background: rgb(123, 0, 255);
+            background: -moz-linear-gradient(90deg, rgba(123, 0, 255, 1) 0%, rgba(226, 0, 255, 1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(123, 0, 255, 1) 0%, rgba(226, 0, 255, 1) 100%);
+            background: linear-gradient(90deg, rgba(123, 0, 255, 1) 0%, rgba(226, 0, 255, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b00ff", endColorstr="#e200ff", GradientType=1);
+        }
+
+        .wave {
+            font-size: 60px;
+            font-weight: bolder;
+            color: black;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .wave span {
+            font-family: Calibri, sans-serif;
+            display: inline-block;
+            animation: wave 1s infinite;
+            animation-delay: calc(0.1s * var(--item));
+        }
+
+        @keyframes wave {
+
+            0%,
+            40%,
+            100% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wave">
+        <span style="--item:1">C</span>
+        <span style="--item:2">O</span>
+        <span style="--item:3">D</span>
+        <span style="--item:4">I</span>
+        <span style="--item:5">N</span>
+        <span style="--item:6">G</span>
+    </div>
+
+</body>
+
+</html>
